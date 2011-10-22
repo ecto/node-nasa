@@ -1,6 +1,6 @@
 # nasa for node
 
-![nasa](http://i.imgur.com/rbYad.png)
+![nasa](http://i.imgur.com/ZNMCC.jpg)
 
 A simple-to-use node.js client for NASA's data API.
 
