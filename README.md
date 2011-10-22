@@ -20,7 +20,9 @@ From source:
     cd node-nasa
     npm link
 
-# library examples
+# library
+
+##example
 
 ````javascript
 var nasa = require('nasa');
@@ -31,29 +33,31 @@ nasa.dataset({ id: 619 }, function(err, data){
 });
 ````
 
+##methods
 
-# CLI examples
-
-
-# methods
-
-## nasa.dataset
+###nasa.dataset
 
 
-## nasa.recent
+###nasa.recent
 
-## nasa.date
+###nasa.date
 
-## nasa.category
+###nasa.category
 
-## nasa.search
+###nasa.search
 
 
-## nasa.dates
+###nasa.dates
 
-## nasa.categories
+###nasa.categories
 
-## nasa.tags
+###nasa.tags
+
+# CLI
+
+##example
+
+##commands
 
 # license
 
