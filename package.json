@@ -8,11 +8,14 @@
     "url": "git://github.com/ecto/node-nasa.git"
   },
   "main": "index.js",
+  "test": "vows test/* --spec",
   "engines": {
     "node": "*"
   },
   "dependencies": {
     "request": "2.x"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "vows": "0.5.x"
+  }
 }
