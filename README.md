@@ -1,13 +1,23 @@
 # nasa for node
 
+![nasa](http://i.imgur.com/rbYad.png)
+
 A simple-to-use node.js client for NASA's data API.
 
 # install
 
+Node library:
+
     npm install nasa
 
-# examples
+CLI tool:
 
+    npm install -g nasa
+
+# library examples
+
+
+# CLI examples
 
 
 # methods
