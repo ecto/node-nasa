@@ -22,6 +22,15 @@ From source:
 
 # library examples
 
+````javascript
+var nasa = require('nasa');
+
+nasa.dataset({ id: 619 }, function(err, data){
+  if (err) console.log(err);
+  else console.log(data);
+});
+````
+
 
 # CLI examples
 

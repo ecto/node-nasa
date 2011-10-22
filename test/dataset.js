@@ -15,22 +15,35 @@ vows.describe('dataset').addBatch({
     'can get': {
         topic: function () { return nasa.dataset },
         'id': {
-            '1': function (topic) {
-              topic({ id: 1 }, function(err, data){
-                assert.equal(err, null);
-                assert.equal(data.status, 'ok'); 
-              });
-            },
-            '20': function (topic) {
-              topic({ id: 20 }, function(err, data){
+            '1619': function (topic) {
+              topic({ id: 619 }, function(err, data){
                 assert.equal(err, null);
                 assert.equal(data.status, 'ok'); 
               });
             }
         },
         'slug': {
-            '20': function (topic) {
-              topic({ slug: 20 }, function(err, data){
+            'great-images-in-nasa': function (topic) {
+              topic({ slug: 'great-images-in-nasa' }, function(err, data){
+                assert.equal(err, null);
+                assert.equal(data.status, 'ok'); 
+              });
+            }
+        }
+    },
+    'can not get': {
+        topic: function () { return nasa.dataset },
+        'id': {
+            '1': function (topic) {
+              topic({ id: 1 }, function(err, data){
+                assert.notEqual(err, null);
+                assert.notEqual(data.status, 'ok'); 
+              });
+            }
+        },
+        'slug': {
+            'unidentified-flying-objects': function (topic) {
+              topic({ slug: 'unidentified-flying-objects' }, function(err, data){
                 assert.equal(err, null);
                 assert.equal(data.status, 'ok'); 
               });
