@@ -14,6 +14,12 @@ CLI tool:
 
     npm install -g nasa
 
+From source:
+
+    git clone git://github.com/ecto/node-nasa.git 
+    cd node-nasa
+    npm link
+
 # library examples
 
 
