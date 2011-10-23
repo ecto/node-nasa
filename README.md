@@ -83,15 +83,19 @@ Returns specified category
 
 `options` requires one of { id: Number } or { slug: String }, but not both.
 
+Optional count (default 10)
+
 ### nasa.tags(cb)
 
 Returns index of tags
 
-###nasa.tag
+###nasa.tag(options, cb)
 
 Returns specified tag
 
 `options` requires one of { id: Number } or { slug: String }, but not both.
+
+Optional count (default 10)
 
 # CLI
 
