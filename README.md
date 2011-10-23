@@ -39,6 +39,8 @@ All options are objects. `{ option: 'value' }`
 
 All callbacks (cb) shoult be formed as `function(err, data){}`
 
+If not null, callback errs will contain a String explaining error.
+
 ###nasa.dataset(options, cb)
 
 Returns specified dataset
@@ -59,7 +61,7 @@ Returns recent datasets
 
 Optional count (default 10)
 
-###nasa.dates(cb)
+### nasa.dates(cb)
 
 Returns index of all dates
 
@@ -71,7 +73,7 @@ Requires String `date`  set to a date in the format YYYY or YYYY-MM or YYYY-MM-D
 
 Optional count (default 10)
 
-###nasa.categories(cb)
+### nasa.categories(cb)
 
 Returns index of categories
 
@@ -81,8 +83,15 @@ Returns specified category
 
 `options` requires one of { id: Number } or { slug: String }, but not both.
 
+### nasa.tags(cb)
 
-###nasa.tags
+Returns index of tags
+
+###nasa.tag
+
+Returns specified tag
+
+`options` requires one of { id: Number } or { slug: String }, but not both.
 
 # CLI
 
