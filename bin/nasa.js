@@ -15,7 +15,13 @@ program
 
 var methods = {
   search: function(){
-    program.prompt('What do you want to search for?', console.log);
+    program.prompt('Search term: ', function(term){
+      console.log(':'+term);
+      nasa.search({ search: term }, function(err, data){
+        console.log('worked');
+        console.log(err || data);
+      });
+    });
   },
 
   quit: function(){

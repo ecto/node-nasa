@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "request": "2.x",
-    "commander": "0.2.x"
+    "commander": "0.2.x",
+    "colors": "*"
   },
   "devDependencies": {
     "vows": "0.5.x"
