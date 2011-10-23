@@ -2,7 +2,7 @@
   "author": "Cam Pedersen <diffference@gmail.com> (http://campedersen.com)",
   "name": "nasa",
   "description": "A client for NASA's data API",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/ecto/node-nasa.git"
@@ -12,8 +12,13 @@
   "engines": {
     "node": "*"
   },
+  "bin": {
+    "nasa": "bin/nasa.js"
+  },
   "dependencies": {
-    "request": "2.x"
+    "request": "2.x",
+    "commander": "0.2.x",
+    "colors": "*"
   },
   "devDependencies": {
     "vows": "0.5.x"
