@@ -12,6 +12,9 @@
   "engines": {
     "node": "*"
   },
+  "bin": {
+    "nasa": "bin/nasa.js"
+  },
   "dependencies": {
     "request": "2.x",
     "commander": "0.2.x",
