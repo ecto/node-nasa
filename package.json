@@ -13,7 +13,8 @@
     "node": "*"
   },
   "dependencies": {
-    "request": "2.x"
+    "request": "2.x",
+    "commander": "0.2.x"
   },
   "devDependencies": {
     "vows": "0.5.x"
