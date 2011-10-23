@@ -35,21 +35,52 @@ nasa.dataset({ id: 619 }, function(err, data){
 
 ##methods
 
-###nasa.dataset
+All options are objects. `{ option: 'value' }`
 
+All callbacks (cb) shoult be formed as `function(err, data){}`
 
-###nasa.recent
+###nasa.dataset(options, cb)
 
-###nasa.date
+Returns specified dataset
 
-###nasa.category
+`options` requires one of { id: Number } or { slug: String }, but not both.
 
-###nasa.search
+###nasa.search(options, cb)
 
+Returns datasets matching search
 
-###nasa.dates
+Requires String `search`
 
-###nasa.categories
+Optional count (default 10)
+
+###nasa.recent(options, cb)
+
+Returns recent datasets
+
+Optional count (default 10)
+
+###nasa.dates(cb)
+
+Returns index of all dates
+
+###nasa.date(date, count = 10, cb)
+
+Returns datasets matching a specific date
+
+Requires String `date`  set to a date in the format YYYY or YYYY-MM or YYYY-MM-DD (non-numeric characters are stripped from the var, so YYYYMMDD or YYYY/MM/DD are also valid)
+
+Optional count (default 10)
+
+###nasa.categories(cb)
+
+Returns index of categories
+
+###nasa.category(options, cb)
+
+Returns specified category
+
+`options` requires one of { id: Number } or { slug: String }, but not both.
+
 
 ###nasa.tags
 
