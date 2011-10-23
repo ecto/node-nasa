@@ -2,7 +2,7 @@
   "author": "Cam Pedersen <diffference@gmail.com> (http://campedersen.com)",
   "name": "nasa",
   "description": "A client for NASA's data API",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/ecto/node-nasa.git"
